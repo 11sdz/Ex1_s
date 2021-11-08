@@ -6,25 +6,22 @@ typedef enum bool {
 	}bool;
 
 	int isArmstrong (int number){
-		if (number==0){
+		if(number==0 || number==1){
+			return True;
+		}
+		int power = (int)( log10(number))+1;
+		int t=number;
+		int sum=0;
+		int digit=0;
+		for(;t>=1;t=t/10){
+			digit=t%10;
+			sum=sum+pow(digit,power);
+		}
+		if(sum!=number){
 			return False;
-		}
-		if ((number<=10) || ((number%10==0) && (number<=100))){
+		}else{
 			return True;
 		}
-		int absNumber= (int)fabs(number);
-		number=absNumber;
-		int power=(int) floor(log10(absNumber))+1;
-		int sum=0,
-		    lastDigit=-1;
-		for(;absNumber>0;absNumber=absNumber/10){
-			lastDigit=absNumber%10;
-			sum=(int)pow(lastDigit,power);
-		}
-		if (sum==number){
-			return True;
-		}
-		return False;
 }
 
 	int isPalindrome (int number){

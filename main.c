@@ -45,5 +45,6 @@ int main (){
      if( isStrong(num2) == 1){
            printf(" %d",num2);
        }
-    } 
+    }
+    printf("\n") ;
 }
