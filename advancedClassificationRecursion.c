@@ -8,7 +8,7 @@ int isArmstrongRec (int number, int power);
 int firstDigit (int number);
 
 int isArmstrong (int number){
-	if(number<=10){
+	if(number<10){
 		return True;
 	}
 	int power = (int) floor(log10(number))+1;
