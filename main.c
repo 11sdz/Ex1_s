@@ -29,7 +29,7 @@ int main (){
        }
     }
      printf("\n");
-     printf("The Prime Numbers are:");
+     printf("The Prime numbers are:");
      num2=temp;
     for (; num2 <= num1;  num2=num2+1)
     {
@@ -38,7 +38,7 @@ int main (){
        }
     }
     printf("\n");
-     printf("The Strong Numbers are:");
+     printf("The Strong numbers are:");
      num2=temp;
     for (; num2 <= num1;  num2=num2+1)
     {
